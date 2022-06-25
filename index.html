@@ -1,0 +1,21 @@
+<html>
+<head>
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+</head>
+    <body style='margin : 0px; overflow: hidden;'>
+        <a-scene embedded arjs='sourceType: webcam;'>
+            <a-assets>
+                <a-asset-item id="cityModel" src="./red.glb" ></a-asset-item>
+              </a-assets>
+              <a-entity gltf-model="#cityModel"  scale="0.1 0.1 0.1"></a-entity>
+              <a-marker-camera type="pattern" url="https://cdn.glitch.global/c3c86eb5-0ec1-4909-8de5-cf764f860661/pattern-Group%20160%20(2).patt?v=1655734149474"></a-marker-camera>         <!-- <a-marker-camera preset='hiro'></a-marker-camera> -->
+        </a-scene>
+        <div style="position:absolute; left:0%; width:100vw; height:140px; bottom:0% ; z-index: 10; background:rgb(29, 29, 29); border-top-left-radius: 20px;border-top-right-radius: 20px; font-size:20px; display:flex;justify-content: center; align-items:center; font-family:sans-serif; text-align:center; color:white; font-weight:800;">Scan the QR code on the poster </div>
+    </body>
+    <script>
+
+        </script>
+    
+</html>
+
